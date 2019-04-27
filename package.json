@@ -16,17 +16,25 @@
     "license": "MIT",
     "scripts": {
         "build:js": "tsc",
-        "build:min": "uglifyjs --source-map --comments --output dist/index.min.js dist/index.js ",
+        "build:dist": "rollup -c",
+        "build:min": "terser --compress --mangle -o dist/index.min.js --source-map \"filename='index.min.js.map',root='index.js.map',url='index.min.js.map'\" -- dist/index.js",
         "build:docs": "typedoc --out ./docs --mode file ./src",
-        "build": "yarn build:js && yarn build:min && yarn build:docs",
+        "build": "yarn build:js && yarn build:dist && yarn build:min && yarn build:docs",
         "lint": "eslint src/index.ts"
     },
     "devDependencies": {
-        "@typescript-eslint/eslint-plugin": "^1.6.0",
+        "@typescript-eslint/eslint-plugin": "^1.7.0",
         "eslint": "^5.16.0",
         "eslint-config-google": "^0.12.0",
+        "rollup": "^1.10.1",
+        "rollup-plugin-commonjs": "^9.3.4",
+        "rollup-plugin-json": "^4.0.0",
+        "rollup-plugin-node-resolve": "^4.2.3",
+        "rollup-plugin-terser": "^4.0.4",
+        "rollup-plugin-typescript": "^1.0.1",
+        "terser": "^3.17.0",
+        "tslib": "^1.9.3",
         "typedoc": "^0.14.2",
-        "typescript": "^3.4.3",
-        "uglify-js": "^3.5.4"
+        "typescript": "^3.4.5"
     }
 }
