@@ -17,6 +17,9 @@
     },
     "rules": {
         "indent": ["error", 4],
-        "max-len": "off"
+        "quotes": ["error", "double"],
+        "semi": ["error", "never"],
+        "brace-style": 0,
+        "max-len": 0
     }
 }
