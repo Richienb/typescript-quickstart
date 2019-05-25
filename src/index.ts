@@ -36,6 +36,6 @@ export class TypeScriptQuickStart {
      * @return {number} The text provided.
     */
     public helloWorld(text: string = ""): string {
-        return text;
+        return text
     }
 }
