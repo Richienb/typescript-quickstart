@@ -4,6 +4,7 @@
         "lib": ["es2017", "dom"],
         "moduleResolution": "node",
         "module": "umd",
+        "esModuleInterop": true,
         "declaration": true,
         "outDir": "./dist",
         "strict": true,
