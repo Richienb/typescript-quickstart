@@ -14,7 +14,6 @@ install:
 
 script:
     - yarn lint
-    - yarn build
     - if [ -n "$TRAVIS_TAG" ]; then npm version $TRAVIS_TAG; fi
 
 deploy:
