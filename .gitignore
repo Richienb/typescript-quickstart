@@ -1,8 +1,20 @@
-dist/*
-docs/*
+# Testbed directory created for testing
+testbed/
 
-# Created by https://www.gitignore.io/api/node,linux,macos,windows
-# Edit at https://www.gitignore.io/?templates=node,linux,macos,windows
+# Typedoc output
+docs/
+
+# TSC output
+dist/
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd
+
+# Created by https://www.gitignore.io/api/node,linux,macos,windows,visualstudiocode
+# Edit at https://www.gitignore.io/?templates=node,linux,macos,windows,visualstudiocode
 
 ### Linux ###
 *~
@@ -70,6 +82,7 @@ lib-cov
 
 # Coverage directory used by tools like istanbul
 coverage
+*.lcov
 
 # nyc test coverage
 .nyc_output
@@ -92,6 +105,9 @@ jspm_packages/
 
 # TypeScript v1 declaration files
 typings/
+
+# TypeScript cache
+*.tsbuildinfo
 
 # Optional npm cache directory
 .npm
@@ -133,9 +149,21 @@ typings/
 # DynamoDB Local files
 .dynamodb/
 
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+
 ### Windows ###
 # Windows thumbnail cache files
 Thumbs.db
+Thumbs.db:encryptable
 ehthumbs.db
 ehthumbs_vista.db
 
@@ -158,4 +186,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.gitignore.io/api/node,linux,macos,windows
+# End of https://www.gitignore.io/api/node,linux,macos,windows,visualstudiocode

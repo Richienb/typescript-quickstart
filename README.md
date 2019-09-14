@@ -12,7 +12,7 @@ A quick start template for Typescript.
 From your NodeJS application:
 
 ```js
-const TypeScriptQuickStart = require("typescript-quickstart")
+const {TypeScriptQuickStart} = require("typescript-quickstart")
 ```
 
 From your web application:
