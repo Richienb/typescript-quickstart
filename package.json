@@ -11,34 +11,29 @@
     ],
     "version": "0.0.0",
     "main": "dist/index.js",
+    "files": [
+        "src/**/*",
+        "dist/**/*"
+    ],
     "repository": "https://github.com/Richienb/typescript-quickstart.git",
     "author": "Richie Bendall <richiebendall@gmail.com>",
     "license": "MIT",
     "scripts": {
-        "build:js": "tsc",
-        "build:dist": "rollup -c",
-        "build:min": "terser --compress --mangle -o dist/index.min.js --source-map \"filename='index.min.js.map',root='index.js.map',url='index.min.js.map'\" -- dist/index.js",
-        "build:docs": "typedoc --out ./docs --mode file ./src",
-        "build": "yarn build:js && yarn build:dist && yarn build:min && yarn build:docs",
-        "test": "jest",
-        "lint": "eslint src/index.ts"
+        "dev": "microbundle --target node --watch",
+        "build": "yarn js && yarn docs",
+        "js": "microbundle --target node",
+        "docs": "typedoc --out ./docs --mode file --target ES6 ./src",
+        "lint": "eslint src/*"
     },
     "devDependencies": {
-        "@types/jest": "^24.0.18",
         "@typescript-eslint/eslint-plugin": "^1.9.0",
         "eslint": "^5.16.0",
         "eslint-config-google": "^0.13.0",
-        "jest": "^24.8.0",
-        "rollup": "^1.20.2",
-        "rollup-plugin-commonjs": "^10.0.1",
-        "rollup-plugin-json": "^4.0.0",
-        "rollup-plugin-node-resolve": "^5.2.0",
-        "rollup-plugin-terser": "^5.1.1",
-        "rollup-plugin-typescript": "^1.0.1",
-        "terser": "^4.2.1",
-        "ts-jest": "^24.0.2",
-        "tslib": "^1.10.0",
-        "typedoc": "^0.15.0",
-        "typescript": "^3.5.3"
+        "microbundle": "^0.11.0",
+        "typedoc": "^0.15.0"
+    },
+    "resolutions": {
+        "microbundle/rollup-plugin-typescript2/rollup-pluginutils/micromatch/braces": "^2.3.1",
+        "microbundle/rollup-plugin-postcss/cssnano/postcss-svgo/svgo/js-yaml": "^3.13.0"
     }
 }

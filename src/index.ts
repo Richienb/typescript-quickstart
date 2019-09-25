@@ -26,14 +26,11 @@
 
 /**
  * A quick start template for Typescript.
- * @class
  */
 export class TypeScriptQuickStart {
     /**
      * Your first method.
-     * @method
-     * @param {string} [text=""] - The text to return
-     * @return {number} The text provided.
+     * @param text - The text to return
     */
     public helloWorld(text: string = ""): string {
         return text

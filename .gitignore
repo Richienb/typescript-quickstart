@@ -70,6 +70,7 @@ lib-cov
 
 # Coverage directory used by tools like istanbul
 coverage
+*.lcov
 
 # nyc test coverage
 .nyc_output
@@ -92,6 +93,9 @@ jspm_packages/
 
 # TypeScript v1 declaration files
 typings/
+
+# TypeScript cache
+*.tsbuildinfo
 
 # Optional npm cache directory
 .npm
@@ -121,6 +125,9 @@ typings/
 # nuxt.js build output
 .nuxt
 
+# react / gatsby
+public/
+
 # vuepress build output
 .vuepress/dist
 
@@ -136,6 +143,7 @@ typings/
 ### Windows ###
 # Windows thumbnail cache files
 Thumbs.db
+Thumbs.db:encryptable
 ehthumbs.db
 ehthumbs_vista.db
 
