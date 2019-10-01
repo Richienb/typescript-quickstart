@@ -19,7 +19,7 @@
     "author": "Richie Bendall <richiebendall@gmail.com>",
     "license": "MIT",
     "scripts": {
-        "dev": "yarn build --watch",
+        "dev": "yarn js --watch",
         "build": "yarn js && yarn docs",
         "js": "microbundle",
         "docs": "typedoc --out ./docs --mode file --target ES6 ./src",
