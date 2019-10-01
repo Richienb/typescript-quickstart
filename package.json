@@ -23,7 +23,7 @@
         "build": "yarn js && yarn docs",
         "js": "microbundle",
         "docs": "typedoc --out ./docs --mode file --target ES6 ./src",
-        "lint": "eslint src/*"
+        "lint": "eslint src --ext .ts"
     },
     "devDependencies": {
         "@typescript-eslint/eslint-plugin": "^2.3.2",
