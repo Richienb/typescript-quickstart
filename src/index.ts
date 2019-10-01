@@ -30,7 +30,7 @@
 export class TypeScriptQuickStart {
     /**
      * Your first method.
-     * @param text - The text to return
+     * @param text The text to return
     */
     public helloWorld(text: string = ""): string {
         return text
