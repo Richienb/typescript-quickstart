@@ -27,7 +27,7 @@
     },
     "devDependencies": {
         "eslint": "^6.5.1",
-        "eslint-config-richienb": "^0.0.1",
+        "eslint-config-richienb": "^0.1.1",
         "microbundle": "^0.11.0",
         "typedoc": "^0.15.0"
     },
