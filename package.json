@@ -26,7 +26,7 @@
         "lint": "eslint src --ext .ts"
     },
     "devDependencies": {
-        "eslint": "^6.5.1",
+        "eslint": "^6.6.0",
         "eslint-config-richienb": "^0.1.2",
         "microbundle": "^0.11.0",
         "typedoc": "^0.15.0"
